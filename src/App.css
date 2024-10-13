@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+.App{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.task-create{
+    width: 400px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.task-update{
+    width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.task-form{
+    display: flex;
+    flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.task-label{
+    margin: 10px 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task-input{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.task-button{
+    margin: 10px 0px;
+    padding: 10px;
+    background-color: green;
+    border: 1px solid green;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.task-button-update{
+    background-color: blueviolet;
+    border: 1px solid blueviolet;
+}
+
+.task-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.task-show{
+    border: 1px solid green;
+    width: 300px;
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    overflow-x: auto;
+}
+
+.task-show-title{
+    margin-bottom: 5px;
+}
+
+.task-show-buttons{
+    margin-top: 10px;
+}
+
+.task-show-delete-button{
+    padding: 5px;
+    font-size: 15px;
+    width: 100px;
+    border: none;
+    border-radius: 30px;
+    background-color: red;
+    color: white;
+    margin-right: 10px;
+}
+
+.task-show-update-button{
+    padding: 5px;
+    font-size: 15px;
+    width: 100px;
+    border: none;
+    border-radius: 30px;
+    background-color: blue;
+    color: white;
+    margin-left: 10px;
 }
